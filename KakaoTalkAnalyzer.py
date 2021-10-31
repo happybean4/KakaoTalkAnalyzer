@@ -3,9 +3,11 @@ filename = "분석파일폴더\\분석용.txt"
 f = open(filename,'r',encoding='UTF8')
 title = ""
 users = {}
-
+emoticon = {}
 keywords = {}
+photo = {}
 dates = {}
+mention = {}
 fileSize = f.read().count("\n")+1
 f.close()
 f = open(filename,'r',encoding='UTF8')
@@ -50,10 +52,27 @@ def parseChat():
 
             for noun in nouns:
                 noun = noun.replace('\n','').replace(' ','')
-                if noun == '사진' or noun == '이모티콘' or noun == '삭제된' or noun == '메시지입니다.' or noun == '샵검색':
+                if  noun == '삭제된' or noun == '메시지입니다.' or noun == '샵검색':
                     continue
-                
-                    
+                if noun == '이모티콘':
+                    if emoticon.get(nickN) == None:
+                        emoticon.update({nickN:1})
+                    else:
+                        emoticon[nickN]+=1
+                    continue
+                if noun == '사진':
+                    if photo.get(nickN) == None:
+                        photo.update({nickN:1})
+                    else:
+                        photo[nickN] +=1
+                    continue
+
+                if '@' in noun:
+                    if mention.get(nickN) == None:
+                        mention.update({nickN:1})
+                    else:
+                        mention[nickN] +=1
+                    continue
                 if keywords.get(noun) == None:
                     keywords.update({noun:1})
                 else:
@@ -81,6 +100,7 @@ parseChat()
 userRank = sorted(users.items(), key=lambda x: x[1],reverse=True)
 dateRank = sorted(dates.items(), key=lambda x: x[1],reverse=True)
 wordsRank = sorted(keywords.items(),key = lambda x: x[1],reverse = True)[1:]
+
 print('---------- {}님과의/에서의 채팅 분석 ----------'.format(title))
 print('---------- 가장 메세지를 많이 보낸 사람 ----------')
 t = 1
