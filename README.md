@@ -11,6 +11,7 @@
 3. 아까 얻은 txt 파일의 이름을 "분석용"로 변경하여 "분석파일폴더" 안에 넣어줍니다.
 
  ![enter image description here](https://ifh.cc/g/Zyq5ka.gif)
+
 4. [KakaoTalkAnalyzer.py](https://github.com/happybean4/KakaoTalkAnalyzer/blob/main/KakaoTalkAnalyzer.py "KakaoTalkAnalyzer.py") 파일을 실행시켜줍니다.
 ## 실행방법2 (.exe파일 실행시키기)
 1. 위 실행방법1의 1번과 같습니다.
