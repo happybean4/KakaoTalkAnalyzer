@@ -12,14 +12,6 @@
 
  ![enter image description here](https://ifh.cc/g/Zyq5ka.gif)
 
-4. [KakaoTalkAnalyzer.py](https://github.com/happybean4/KakaoTalkAnalyzer/blob/main/KakaoTalkAnalyzer.py "KakaoTalkAnalyzer.py") 파일을 실행시켜줍니다.
-## 실행방법2 (.exe파일 실행시키기)
-1. 위 실행방법1의 1번과 같습니다.
-2. dist/KakaoTalkAnalyzer 폴더 안에 "분석파일폴더"라는 이름으로 폴더를 생성합니다.
-3. 아까 얻은 txt 파일의 이름을 "분석용"으로 변경하여 "분석파일폴더"안에 넣어줍니다.
-![enter image description here](https://ifh.cc/g/vRHbaG.gif)
-4. dist/KakaoTalkAnalyzer 폴더 안에 있는 KakaoTalkAnalyzer.exe 파일을 실행시켜줍니다.
-
 ## TODO
-- 방이 활발했던 ~~날짜~~/시간
-- 단톡방 멤버들의 친밀도 분석
+- Konlpy로 제대로 키워드 분석
+- 웹 프로그래밍 (분석 결과 깔끔하게 보여주기)
