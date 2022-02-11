@@ -2,7 +2,7 @@
 # KakaoTalkAnalyzer
 카카오톡 대화 분석기
 
-바킹독님의 [KakaotalkAnalyzer](https://github.com/encrypted-def/KakaotalkAnalyzer )에서 영감을 받아 제작했
+바킹독님의 [KakaotalkAnalyzer](https://github.com/encrypted-def/KakaotalkAnalyzer )에서 영감을 받아 제작했습니다
 
 ## 실행방법1 (.py 파일 직접 실행)
 
